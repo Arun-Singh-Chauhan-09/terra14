@@ -29,10 +29,15 @@ ingress= [
                 to_port= 0
               },
                {
-                from_port                = 22
-                to_port                  = 22
-                protocol                 = "tcp"
-                source_security_group_id = "i-0c2bd602b6ee715b1"
+                "cidr_blocks"= [ "0.0.0.0/0", ]
+                description= ""
+                from_port= 22
+                ipv6_cidr_blocks= []
+                prefix_list_ids= []
+                protocol= "tcp"
+                security_groups= ["i-0c2bd602b6ee715b1"]
+                self= false
+                to_port= 22
               }
 		]     
 
