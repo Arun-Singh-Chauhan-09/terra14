@@ -27,6 +27,12 @@ ingress= [
                 security_groups= []
                 self= false
                 to_port= 0
+              },
+               {
+                from_port                = 22
+                to_port                  = 22
+                protocol                 = "tcp"
+                source_security_group_id = "i-0c2bd602b6ee715b1"
               }
 		]     
 
