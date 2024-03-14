@@ -1,0 +1,4 @@
+test-2/.terraform/
+test-2/.terraform.lock.hcl
+test-2/terraform_state.json
+test-2/test.txt
